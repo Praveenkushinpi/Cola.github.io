@@ -2,21 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3d</title>
-<link herf="style.csss" rel="stylesheet" type="text/css" />
-</head>
-<body>
- <a-scene >
-    <a-entity geometry=" primitive: torus' radius:5 tube:2.t" material="c color: #ffoooo; metalness: 0,5"></a-entity>
-    <a-light type="ambient" color="#ffffff" intensity="0.5"></a-light> 
-    <a-light type="directional" color="#ffffff" intensity="1" position="0 1 0"></a-light>
-    <a- entity animation=" property: position; to: 02 -5; dur: 2000; easing: easeInOut@uad"></a-entity>
-  </a scene>
-  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>3D Realistic Donut with A-Frame</title>
+                <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+                </head>
+                <body>
+                    <a-scene>
+                            <!-- Donut (Torus) with texture -->
+                                    <a-torus 
+                                                position="0 1.5 -3" 
+                                                            radius="1" 
+                                                                        radius-tubular="0.4" 
+                                                                                    segments-radial="30" 
+                                                                                                segments-tubular="100"
+                                                                                                            src="https://cdn.glitch.global/1c54f92f-fcd8-4b47-a54b-ff83cf4ae738/donut-texture.jpg?v=1683246081"
+                                                                                                                        rotation="0 0 0">
+                                                                                                                                </a-torus>
 
-<script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+                                                                                                                                        <!-- Lighting -->
+                                                                                                                                                <a-light type="ambient" color="#ffffff" intensity="0.5"></a-light>
+                                                                                                                                                        <a-light type="directional" position="2 4 5" intensity="1"></a-light>
 
-
-</body>
-</html>
+                                                                                                                                                                <!-- Camera -->
+                                                                                                                                                                        <a-entity position="0 1.6 0">
+                                                                                                                                                                                    <a-camera></a-camera>
+                                                                                                                                                                                            </a-entity>
+                                                                                                                                                                                                </a-scene>
+                                                                                                                                                                                                </body>
+                                                                                                                                                                                                </html>
