@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appealing 3D Donut with A-Frame</title>
+    <title>3D Chocolate Donut with A-Frame</title>
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
 </head>
 <body>
     <a-scene>
-        <!-- Donut (Torus) with texture -->
+        <!-- Donut (Torus) - standing upright and chocolate brown -->
         <a-torus 
             position="0 1.5 -3" 
             radius="1" 
             radius-tubular="0.35" 
             segments-radial="32" 
             segments-tubular="100"
-            src="https://cdn.glitch.global/1c54f92f-fcd8-4b47-a54b-ff83cf4ae738/donut-texture.jpg?v=1683246081"
-            rotation="0 0 0"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+            color="#8B4513"  <!-- Chocolate brown color -->
+            rotation="90 0 0"> <!-- Makes it stand vertically -->
         </a-torus>
 
         <!-- Plane (Table Surface) -->
-        <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#E0CBA8"></a-plane>
+        <a-plane 
+            position="0 0 -3" 
+            rotation="-90 0 0" 
+            width="5" 
+            height="5" 
+            color="#E0CBA8">
+        </a-plane>
 
         <!-- Background (Sky) -->
         <a-sky color="#F0F8FF"></a-sky>
 
         <!-- Lighting -->
-        <a-light type="ambient" color="#ffffff" intensity="0.6"></a-light>
+        <a-light type="ambient" color="#ffffff" intensity="0.7"></a-light>
         <a-light type="directional" position="3 5 5" intensity="1.0"></a-light>
 
         <!-- Camera -->
