@@ -1,40 +1,5 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appealing 3D Donut with A-Frame</title>
-    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
-</head>
-<body>
-    <a-scene>
-        <!-- Donut (Torus) with texture -->
-        <a-torus 
-            position="0 1.5 -3" 
-            radius="1" 
-            radius-tubular="0.35" 
-            segments-radial="32" 
-            segments-tubular="100"
-            color="#f1bf66"
-            rotation="0 0 0"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
-        </a-torus>
-
-        <!-- Plane (Table Surface) -->
-        <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#E0CBA8"></a-plane>
-
-        <!-- Background (Sky) -->
-        <a-sky color="#F0F8FF"></a-sky>
-
-        <!-- Lighting -->
-        <a-light type="ambient" color="#ffffff" intensity="0.6"></a-light>
-        <a-light type="directional" position="3 5 5" intensity="1.0"></a-light>
-
-        <!-- Camera -->
-        <a-entity position="0 1.6 2.5">
-            <a-camera></a-camera>
-        </a-entity>
-    </a-scene>
-</body>
-</html>
+<script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script><script>AFRAME.registerComponent('scale-on-mouseenter', {// });...
+</script>
+</head
